@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 /*////////////////////////////////////////////////////////////////////////
 Table of Contents:
     1. Global Styles
@@ -11,17 +14,48 @@ Table of Contents:
 ////////////////////////////////////////////////////////////////////////*/
 
 
-
 /*////////////////////////
     1. Global Styles
 ////////////////////////*/
 
+/*CSS RESET*/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-
+main {
+    max-width: 1000px;
+    margin: auto;
+}
 /*////////////////////////
     2. Typography
 ////////////////////////*/
+h1{
+    font-family: 'Poppins', sans-serif;
+    color: #1C2B32;
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+}
 
+h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #1C2B32;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    font-family: 'Poppins', sans-serif;
+    color:   #1C2B32;
+    font-size: 16px;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
 
 
 /*////////////////////////
@@ -29,21 +63,125 @@ Table of Contents:
 ////////////////////////*/
 
 
-
 /*///////////// 3.1 Header /////////////*/
+.header-section{
+
+    background-image: url('../assets/images/mountains.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+}
+
+.header-content{
+    padding: 200px;
+    text-align: center;
+}
+
+.header-content button{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    border-radius: 0 50px 50px 0;
+    border: none;
+    background-color: #1C2B32;
+    color: #ffffff;
+    padding: 22px 40px;
+    margin-left: -7px;
+}
+.header-content input{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #1C2B32;
+    border: 2px solid #1C2B32;
+    border-radius: 50px 0 0 50px;
+    padding: 20px 100px;
+    background-color: transparent;
+
+
+}
+.header-content input::placeholder{
+    color: #1C2B32;
+
+
+}
+
+.header-content p{
+    margin-bottom: 30px;
+}
+
 
 
 
 /*///////////// 3.2 Testimonial /////////////*/
+.clients-content{
+    margin-top: 50px
+}
+.clients-content h2{
+    margin: 50px;
+}
+.clients-content article{
+    padding: 50px 70px 50px 70px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 13px 3px #899CA0;
 
 
+
+
+}
+ .article-profile img{
+     display: inline-block;
+     height: 44px;
+     width: 44px;
+     border-radius: 50%;
+
+ }
 
 /*///////////// 3.3 Support /////////////*/
 
-
+.call-center-section img{
+    border-radius: 25px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.call-center-section h2{
+    margin: 50px;
+}
+.call-center-section button,
+.call-center-section button p{
+    background-color: #1C2B32;
+    color: #ffffff;
+    border-radius: 40px;
+    border: none;
+    font-size: 16px;
+    padding: 30px 45px 30px 45px;
+    margin-top: 30px;
+}
 
 /*///////////// 3.4 Faq /////////////*/
-
-
+.FAQ-section h2{
+    margin-bottom: 50px ;
+}
+.FAQ-answer{
+    background-color: #1C2B32;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    color:#ffffff;
+}
+.FAQ-section summary{
+    margin: 10px 10px 30px 10px;
+}
+.FAQ-section summary:hover{
+    cursor: pointer;
+}
 
 /*///////////// 3.5 Footer /////////////*/
+.footer-section{
+    background-color: #1C2B32;
+    text-align: center;
+    padding: 30px 40px 30px 40px;
+    background-position: bottom;
+}
+.footer-section p{
+    color: #ffffff;
+}
