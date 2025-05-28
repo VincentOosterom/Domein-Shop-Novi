@@ -29,6 +29,15 @@ main {
     max-width: 1000px;
     margin: auto;
 }
+
+a{
+    color: #1C2B32;
+    text-decoration: underline;
+}
+
+a:hover{
+    text-decoration: none;
+}
 /*////////////////////////
     2. Typography
 ////////////////////////*/
@@ -57,6 +66,12 @@ body{
     font-size: 16px;
 }
 
+input,
+button{
+    font-family: inherit;
+}
+
+
 
 /*////////////////////////
     3. Areas
@@ -69,73 +84,78 @@ body{
     background-image: url('../assets/images/mountains.jpg');
     background-size: cover;
     background-position: center;
-    height: 800px;
+    height: 1000px;
 }
 
 .header-content{
-    padding: 200px;
+    padding: 150px;
     text-align: center;
 }
 
 .header-content button{
-    font-family: 'Poppins', sans-serif;
     font-size: 16px;
     border-radius: 0 50px 50px 0;
     border: none;
     background-color: #1C2B32;
     color: #ffffff;
-    padding: 22px 40px;
+    padding: 26px;
     margin-left: -7px;
 }
 .header-content input{
-    font-family: 'Poppins', sans-serif;
+
     font-size: 16px;
     color: #1C2B32;
     border: 2px solid #1C2B32;
     border-radius: 50px 0 0 50px;
-    padding: 20px 100px;
+    padding: 24px 32px;
     background-color: transparent;
-
+    outline: transparent;
+    width: 350px;
 
 }
 .header-content input::placeholder{
     color: #1C2B32;
-
-
+    text-align: left;
 }
 
 .header-content p{
     margin-bottom: 30px;
 }
-
-
-
-
 /*///////////// 3.2 Testimonial /////////////*/
 .clients-content{
-    margin-top: 50px
+    margin-top: 64px
 }
 .clients-content h2{
     margin: 50px;
 }
 .clients-content article{
-    padding: 50px 70px 50px 70px;
-    margin-bottom: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 13px 3px #899CA0;
-
-
-
+    position: relative;
+    padding: 64px 96px 64px 150px;
+    margin: 64px 0;
+    border-radius: 12px;
+    box-shadow: 0 2px 13px 3px #c9cecf;
 
 }
+.article-quote-icon{
+    position: absolute;
+    left: 100px;
+    top: 64px;
+}
  .article-profile img{
-     display: inline-block;
+     vertical-align: middle;
      height: 44px;
      width: 44px;
      border-radius: 50%;
-
+ }
+ .article-profile{
+     padding-top: 25px;
  }
 
+ .profile-name{
+     display: inline;
+     margin-left: 24px;
+     font-style: italic;
+ }
 /*///////////// 3.3 Support /////////////*/
 
 .call-center-section img{
@@ -153,7 +173,7 @@ body{
     border-radius: 40px;
     border: none;
     font-size: 16px;
-    padding: 30px 45px 30px 45px;
+    padding: 24px 30px;
     margin-top: 30px;
 }
 
@@ -162,10 +182,10 @@ body{
     margin-bottom: 50px ;
 }
 .FAQ-answer{
-    background-color: #1C2B32;
-    margin: 10px 10px 10px 10px;
+    background-color: #879d90;
+    margin: 10px 10px;
     border-radius: 10px;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px;
     color:#ffffff;
 }
 .FAQ-section summary{
